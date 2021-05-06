@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="intro_stylesheet.css">
+    <script>
+        function showdiv(){
+            document.getElementById("introduction").style.visibility="visible";
+        }
+            setTimeout("showdiv()", 0000);
+
+        function hidediv(){
+            document.getElementById("introduction").style.visibility="hidden";
+        }
+        setTimeout("hidediv()", 4000);
+
+        function replace(){
+            location.replace("https://w1810194.users.ecs.westminster.ac.uk/mainpage.html")
+        }
+
+        function CallButton(){
+        document.getElementById("nextpage").click();
+        }
+
+        setTimeout("CallButton()",4000);
+
+    </script>
+</head>
+<body>
+<div id="introduction">
+    <section class="content">
+        <div id="intro">
+            <img id="image" src="Images/logo_white_trans.png" alt="no">
+            <p id="title">THE 8-BIT STORE</p><br>
+        </div>
+
+
+
+        <div class="contact-form">
+            <div class="input-fields">
+                <p >Desira Wijesundura </p>
+                <p id="long1" >Dinusha Amarasinghe</p>
+                <p id="long2">Rumeth Randombage</p>
+                <p >Onel Liyanage</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="bg-image">
+        <img src="Images/black_console.png" alt="no">
+    </section>
+
+</div>
+<button onclick="replace()" id="nextpage"></button>
+
+</body>
+</html>
